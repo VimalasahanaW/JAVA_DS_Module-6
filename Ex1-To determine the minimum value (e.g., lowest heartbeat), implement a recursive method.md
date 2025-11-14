@@ -3,7 +3,8 @@
 ## AIM:
 To write a JAVA program To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
 
-## Algorithm
+## Algorithm:
+
 1. Start with the array and begin at the first element.
    
 2.If you are at the last element, return that value.
