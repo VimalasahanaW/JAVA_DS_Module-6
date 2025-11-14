@@ -7,13 +7,13 @@ To write a JAVA program To determine the minimum value (e.g., lowest heartbeat),
 
 1. Start with the array and begin at the first element.
    
-2.If you are at the last element, return that value.
+ 2.If you are at the last element, return that value.
 
-3.Otherwise, find the minimum value in the rest of the array using recursion.
+ 3.Otherwise, find the minimum value in the rest of the array using recursion.
 
-4.Compare the current element with the minimum of the remaining elements.
+ 4.Compare the current element with the minimum of the remaining elements.
 
-5.Return the smaller value as the minimum.
+ 5.Return the smaller value as the minimum.
    
 
 ## Program:
