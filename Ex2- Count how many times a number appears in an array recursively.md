@@ -5,9 +5,13 @@ To write a Java program to Count how many times a number appears in an array rec
 
 ## Algorithm
 1.Read the array size, array elements, and the number to be counted.
+
 2.Start from index 0 of the array.
+
 3.If the index reaches the end of the array, return 0.
+
 4.Recursively count in the remaining part of the array.
+
 5.If the current element matches the number, add 1 to the count; otherwise, add 0.  
 
 ## Program:
