@@ -18,37 +18,32 @@ Program To determine the minimum value (e.g., lowest heartbeat), implement a rec
 Developed by: VIMALA SAHANA W
 RegisterNumber: 212223040241
 */
-public class HealthMonitor {
+import java.util.Scanner;
 
-    // Recursive method to find minimum value in the array
-    public static int findMin(int[] arr, int index) {
-        // Base case: if last element, return it
-        if (index == arr.length - 1) {
-            return arr[index];
-        }
-
-        // Recursive case: find minimum in the rest of the array
-        int minOfRest = findMin(arr, index + 1);
-
-        // Compare current element with minimum of remaining elements
-        return Math.min(arr[index], minOfRest);
+public class MinValueRecursive {
+    static int findMin(int arr[], int n) {
+        if (n == 1)
+            return arr[0];
+        return Math.min(arr[n - 1], findMin(arr, n - 1));
     }
 
     public static void main(String[] args) {
-        int[] heartBeats = {78, 85, 90, 72, 88, 76};
-
-        int minimumValue = findMin(heartBeats, 0);
-
-        System.out.println("Lowest Heartbeat Reading: " + minimumValue);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of readings: ");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        System.out.println("Enter the readings:");
+        for (int i = 0; i < n; i++)
+            arr[i] = sc.nextInt();
+        System.out.println("Minimum value (lowest heartbeat): " + findMin(arr, n));
+        sc.close();
     }
 }
 
 ```
 
 ## Output:
-<img width="419" height="106" alt="image" src="https://github.com/user-attachments/assets/3ca92196-d53c-4d6f-beb7-fc8013a42d0f" />
-
-
+<img width="514" height="281" alt="image" src="https://github.com/user-attachments/assets/5caf869d-6c42-4ff6-85a0-52e66d99665b" />
 
 ## Result:
 Thus the JAVA program to  find the minimum value (e.g., lowest heartbeat), implement a recursive method has implemented successfully.
